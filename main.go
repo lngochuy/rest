@@ -7,7 +7,7 @@ import (
 
 func main() {
 	models.InitializeDB()
-	models.CreateTable(false)
+	models.CreateTable(true)
 
 	router := routers.Route()
 	router.Run(":1999")
